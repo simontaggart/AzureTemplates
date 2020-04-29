@@ -9,7 +9,7 @@ $devSqlServer = "sql-dev-${devName}"
 $adminUser = Read-Host -Prompt "Enter the SQL server administrator username" 
 $adminPassword = Read-Host -Prompt "Enter the SQl server administrator password" -AsSecureString 
 $JSONTemplateFile = "rg-dev-template.json"
-$JSONTemplateUri = "https://raw.githubusercontent.com/simontaggart/AzureTemplates/master/ARM%20Deployments/${JSONTemplateFile}"
+$JSONTemplateUri = "https://raw.githubusercontent.com/simontaggart/AzureTemplates/master/${JSONTemplateFile}"
 
 #Create the Resource Group
 New-AzResourceGroup -Name $rgName -Location "West Europe" -force
